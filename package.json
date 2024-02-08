@@ -1,5 +1,10 @@
 {
 	"dependencies": {
 		"concurrently": "^8.2.2"
+	},
+	"scripts": {
+		"install:backend": "cd packages/backend && pnpm install",
+		"install:frontend": "cd packages/frontend && pnpm install",
+		"install:all": "concurrently npm:install:*"
 	}
 }
