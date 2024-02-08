@@ -3,6 +3,8 @@
 		"concurrently": "^8.2.2"
 	},
 	"scripts": {
+		"format": "prettier .",
+		"format:fix": "prettier --write .",
 		"install:backend": "cd packages/backend && pnpm install",
 		"install:frontend": "cd packages/frontend && pnpm install",
 		"install:all": "pnpm install ; npm run install:backend ; npm run install:frontend"
