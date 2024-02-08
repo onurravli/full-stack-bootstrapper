@@ -9,6 +9,8 @@
   },
   "scripts": {
     "build": "tsc -p .",
-    "build:dev": "tsc -w -p ."
+    "build:dev": "tsc -w -p .",
+    "start": "node dist/index.js",
+    "start:dev": "node --watch dist/index.js"
   }
 }
