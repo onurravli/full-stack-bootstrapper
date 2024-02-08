@@ -6,5 +6,8 @@
 		"install:backend": "cd packages/backend && pnpm install",
 		"install:frontend": "cd packages/frontend && pnpm install",
 		"install:all": "pnpm install ; npm run install:backend ; npm run install:frontend"
+	},
+	"devDependencies": {
+		"prettier": "^3.2.5"
 	}
 }
