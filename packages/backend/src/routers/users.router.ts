@@ -4,9 +4,9 @@ import { UsersController } from '../controllers';
 const usersRouter: Router = Router();
 const usersController: UsersController = new UsersController();
 
-usersRouter.get('/', usersController.get);
+usersRouter.get('/:id', usersController.get);
 usersRouter.post('/', usersController.post);
-usersRouter.put('/', usersController.put);
-usersRouter.delete('/', usersController.delete);
+usersRouter.put('/:id', usersController.put);
+usersRouter.delete('/:id', usersController.delete);
 
 export { usersRouter };

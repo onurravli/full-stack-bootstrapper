@@ -2,8 +2,9 @@ import type { Request, Response } from 'express';
 
 class UsersController {
   public async get(req: Request, res: Response) {
+    const { id } = req.params;
     return res.status(200).json({
-      message: 'This will return all users.',
+      message: `This will return user with ID ${id}.`,
     });
   }
   public async post(req: Request, res: Response) {
@@ -12,13 +13,15 @@ class UsersController {
     });
   }
   public async put(req: Request, res: Response) {
+    const { id } = req.params;
     return res.status(200).json({
-      message: 'This will update an user.',
+      message: `This will update user with ID ${id}.`,
     });
   }
   public async delete(req: Request, res: Response) {
+    const { id } = req.params;
     return res.status(200).json({
-      message: 'This will delete an user.',
+      message: `This will delete user with ID ${id}.`,
     });
   }
 }
